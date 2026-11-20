@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Krateo : l’app de musculation pour iPhone</title>
+<meta name="description" content="Krateo est une app de musculation pour iPhone et Apple Watch : note tes séries, suis des programmes, vois tes progrès et pose tes questions à un coach IA qui connaît ton entraînement.">
+<link rel="canonical" href="https://hakmicreations.com/krateo/fr/">
+<link rel="alternate" hreflang="en" href="https://hakmicreations.com/krateo/">
+<link rel="alternate" hreflang="fr" href="https://hakmicreations.com/krateo/fr/">
+<link rel="alternate" hreflang="x-default" href="https://hakmicreations.com/krateo/">
+<link rel="icon" href="/assets/favicon.png">
+<meta name="theme-color" content="#0B0B0D">
+<style>
+:root{--bg:#0B0B0D;--surface:#141417;--line:rgba(255,255,255,.1);--text:#F5F3EF;--dim:#A9A59D;--gold:#C9A86A;--accent:#FF6A2B}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--text);text-decoration-color:rgba(245,243,239,.4);text-underline-offset:3px}a:hover{text-decoration-color:var(--gold)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.top{border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.brand{font-weight:600;letter-spacing:.32em;font-size:13px;text-decoration:none;white-space:nowrap}
+.brand b{color:var(--gold);font-weight:600}
+nav{display:flex;gap:18px;flex-wrap:wrap;justify-content:flex-end}nav a{color:var(--dim);font-size:14.5px;text-decoration:none}nav a:hover{color:var(--text)}
+h1{font-size:clamp(34px,6.2vw,60px);line-height:1.06;letter-spacing:-.025em;margin:0 0 16px;font-weight:700}
+h2{font-size:clamp(23px,3.4vw,31px);letter-spacing:-.015em;line-height:1.2;margin:0 0 14px}
+h3{font-size:18px;margin:26px 0 6px}
+p{margin:0 0 14px}.lead{color:var(--dim);font-size:clamp(17px,2.2vw,20px);max-width:60ch}
+.eyebrow{color:var(--gold);font-size:12px;letter-spacing:.24em;text-transform:uppercase;font-weight:600;margin:0 0 14px}
+section{padding:64px 0}section+section{border-top:1px solid var(--line)}
+.hero{padding-top:76px;padding-bottom:60px}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;border:1px solid var(--line);text-decoration:none;font-weight:600;font-size:15.5px}
+.btn.solid{background:var(--text);color:#0B0B0D;border-color:var(--text)}
+.btn.muted{color:var(--dim);cursor:default}
+.row{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px}
+.card h3{margin:0 0 6px}.card p{color:var(--dim);margin:0;font-size:15.5px}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.shots img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:16px;border:1px solid var(--line);display:block}
+.app{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.app img{width:92px;height:92px;border-radius:22px;border:1px solid var(--line)}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.price{font-size:30px;font-weight:300;letter-spacing:-.02em;margin:4px 0 2px}.price small{font-size:14px;color:var(--dim);font-weight:400}
+.card ul{margin:12px 0 0;padding-left:18px;color:var(--dim);font-size:15.5px}
+.note{color:var(--dim);font-size:14.5px}
+article{max-width:74ch;padding:52px 0 72px}
+article h1{font-size:clamp(30px,5vw,44px)}
+article h2{margin-top:44px;padding-top:26px;border-top:1px solid var(--line)}
+article ul,article ol{padding-left:22px;margin:0 0 14px}article li{margin:5px 0}
+.table{overflow-x:auto;margin:0 0 16px;border:1px solid var(--line);border-radius:14px}
+table{border-collapse:collapse;width:100%;font-size:15px;min-width:520px}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}th{color:var(--dim);font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+footer{border-top:1px solid var(--line);padding:30px 0 44px;color:var(--dim);font-size:14.5px}
+footer .wrap{display:flex;gap:14px 26px;flex-wrap:wrap;justify-content:space-between}
+footer a{color:var(--dim)}
+.lang{color:var(--dim);font-size:13.5px;white-space:nowrap}.lang a{color:var(--dim)}.lang b{color:var(--text);font-weight:600}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="/krateo/">KRATE<b>O</b></a>
+<nav><a href="/krateo/fr/#features">Fonctionnalités</a><a href="/krateo/fr/#plans">Offres</a><a href="/krateo/fr/support/">Assistance</a><a href="/">Hakmi Creations</a><span class="lang"><a href="/krateo/" hreflang="en" lang="en">EN</a> | <b>FR</b></span></nav>
+</div></header>
+
+<main>
+<div class="wrap hero">
+<div class="app" style="margin-bottom:26px"><img src="/assets/krateo-icon.png" alt="Icône de l’app Krateo" width="92" height="92"></div>
+<p class="eyebrow">Suivi de musculation · iPhone et Apple Watch</p>
+<h1>Entraîne-toi. Suis tes progrès.<br>Deviens plus fort.</h1>
+<p class="lead">Krateo note tes séances, montre tes progrès et te donne un coach qui connaît chaque série que tu as faite.</p>
+<div class="row"><span class="btn muted">Bientôt sur l’App Store</span><a class="btn" href="#features">Découvrir l’app</a></div>
+</div>
+<section><div class="wrap">
+<div class="shots"><img src="/assets/ex/bench_bb.jpg" alt="Développé couché, muscles sollicités en surbrillance" loading="lazy" width="512" height="512"><img src="/assets/ex/squat_bb.jpg" alt="Squat, muscles sollicités en surbrillance" loading="lazy" width="512" height="512"><img src="/assets/ex/deadlift.jpg" alt="Soulevé de terre, muscles sollicités en surbrillance" loading="lazy" width="512" height="512"><img src="/assets/ex/lat_pulldown.jpg" alt="Tirage vertical, muscles sollicités en surbrillance" loading="lazy" width="512" height="512"><img src="/assets/ex/pull_up.jpg" alt="Traction, muscles sollicités en surbrillance" loading="lazy" width="512" height="512"><img src="/assets/ex/ohp_bb.jpg" alt="Développé militaire, muscles sollicités en surbrillance" loading="lazy" width="512" height="512"></div>
+<p class="note" style="margin-top:14px">Images d’exercices tirées de l’app. Chacun des 200 exercices a la sienne.</p>
+</div></section>
+<section id="features"><div class="wrap">
+<h2>Ce que fait Krateo</h2>
+<div class="grid"><div class="card"><h3>Note chaque série, vite</h3><p>Pars d’une routine ou d’une séance vide. Poids, répétitions, minuteur de repos et notes, avec tes derniers chiffres à côté de chaque série.</p></div><div class="card"><h3>200 exercices, illustrés</h3><p>Chaque exercice a sa propre image 3D avec les muscles sollicités en surbrillance, et comment le faire.</p></div><div class="card"><h3>Des programmes adaptés à ta semaine</h3><p>Réponds à quelques questions et Krateo crée un programme pour ton objectif, ton emploi du temps et ton matériel.</p></div><div class="card"><h3>Des progrès faciles à lire</h3><p>Records, volume, séries par muscle et carte musculaire, par semaine, mois ou année.</p></div><div class="card"><h3>Un coach IA qui connaît ton entraînement</h3><p>Demande quoi travailler aujourd’hui ou pourquoi un exercice stagne. Les réponses s’appuient sur tes propres séances. Conseils d’entraînement uniquement, pas de conseils médicaux.</p></div><div class="card"><h3>Rappels eau et compléments</h3><p>Choisis ton objectif et tes horaires. Coche-les depuis la notification ou le widget de l’écran d’accueil.</p></div><div class="card"><h3>Santé et Apple Watch</h3><p>Enregistre tes séances et ton eau dans Santé, et suis tes séries, ton repos et ta fréquence cardiaque au poignet.</p></div><div class="card"><h3>Partage ta séance</h3><p>Place tes stats sur ta propre photo au format Story Instagram, dans cinq styles.</p></div></div>
+</div></section>
+<section id="plans"><div class="wrap">
+<h2>Offres</h2>
+<p class="lead" style="margin-bottom:24px">Commence gratuitement. Chaque offre payante démarre par un essai gratuit de 7 jours.</p>
+<div class="plans">
+<div class="card"><h3>Gratuit</h3><div class="price">0 $</div><ul><li>Suivi des séances et les 200 exercices</li><li>3 routines</li><li>Historique des 30 derniers jours</li><li>Rappels, widget, Santé et Apple Watch</li><li>5 messages au Coach IA pour l’essayer</li></ul></div>
+<div class="card"><h3>Krateo Premium</h3><div class="price">4,99 $ <small>par mois, ou 39,99 $ par an</small></div><ul><li>Routines illimitées</li><li>Historique complet des séances</li><li>Toutes les périodes de statistiques</li><li>Poids suggérés pour ta prochaine séance</li><li>10 messages au Coach IA par mois</li></ul></div>
+<div class="card"><h3>Krateo Premium + Coach IA</h3><div class="price">14,99 $ <small>par mois, ou 119,99 $ par an</small></div><ul><li>Tout ce que contient Premium</li><li>300 messages au Coach IA par mois</li></ul></div>
+</div>
+<p class="note" style="margin-top:16px">Prix en dollars américains ; l’App Store affiche ton prix local. Les abonnements se renouvellent automatiquement jusqu’à leur résiliation dans les réglages de ton iPhone. Tous les détails dans les <a href="/krateo/fr/terms/">Conditions d’utilisation</a>.</p>
+</div></section>
+<section><div class="wrap">
+<h2>Tes données</h2>
+<p class="lead">Ni publicité ni pistage. Tes photos restent sur ton téléphone. Tu peux supprimer ton compte et tout ce qu’il contient depuis l’app. Lis la <a href="/krateo/fr/privacy/">Politique de confidentialité</a>.</p>
+</div></section>
+</main>
+<footer><div class="wrap">
+<span>© 2026 Mostafa Hakmi Hakoumi · Hakmi Creations</span>
+<span><a href="/krateo/fr/privacy/">Confidentialité</a> · <a href="/krateo/fr/terms/">Conditions</a> · <a href="/krateo/fr/support/">Assistance</a> · <a href="mailto:hakmicreations@gmail.com">hakmicreations@gmail.com</a></span>
+</div></footer>
+</body>
+</html>
